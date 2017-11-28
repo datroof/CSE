@@ -29,4 +29,9 @@ name = input(">_ ")
 print("Hello %s." % name)
 
 age = input("How old are you")
-print("%s?! That's really old! You should die now." %age) 
+print("%s?! That's really old! You should die now." %age)
+
+print("Pickle Rickerickerickerickerickericker")
+print("What's your dream in life?")
+dream = input(">_ ")
+print("Wow, %s, really?" % dream)

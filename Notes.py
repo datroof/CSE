@@ -93,6 +93,29 @@ def grade_calc(percentage):
 print(grade_calc (69.99999999999999999999999999999999999999999999999999999999999999999))
 
 
+def happy_birthday(name):
+    print("Happy birthday to you")
+    print("Happy birthday to you")
+    print("Happy birthday dear %s" % name)
+    print("Happy birthday to you")
 
 
+happy_birthday("Matthew")
 
+
+# loops
+
+for num in range(10):
+    print(num +1)
+
+
+a = 1
+while a < 10: # this is the condition, it must be true to execute.
+
+    print(a)
+    a += 1  # This iterate so that we can break this loop.
+
+
+# Random Numbers
+import random # This should be on line one1
+print (random.randint(1, 10))

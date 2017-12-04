@@ -119,3 +119,20 @@ while a < 10: # this is the condition, it must be true to execute.
 # Random Numbers
 import random # This should be on line one1
 print (random.randint(1, 10))
+
+c = '1'
+print(c == 1) # we have a string ans an integer
+print(int(c) == 1)
+print(c == str(1))
+
+
+
+
+# comparisons
+print (1 == 1) # use a double equal sign
+
+print(1 != 2) # is not equal to 2
+print(not False)
+
+
+

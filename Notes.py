@@ -55,6 +55,7 @@ def say_hi(name):  # Name is a "parameter"
 
 
 say_hi("Matthew")
+# Inputs are ALWAYS of type String!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 
 def print_age(name, age):

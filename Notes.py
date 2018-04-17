@@ -38,8 +38,7 @@
 #
 # #Function
 
-
-def print_hw():
+"""def print_hw():
     print("Hello World.")
     print("Enjoy the day.")
 
@@ -134,6 +133,140 @@ print (1 == 1) # use a double equal sign
 
 print(1 != 2) # is not equal to 2
 print(not False)
+"""
 
 
+
+
+# lists
+"""
+the_count = [1, 2, 3, 4, 5]
+cheeseburger_ingredients = ['cheese', 'meat', 'sauce', 'sesame seed bread', 'avocado']
+print(cheeseburger_ingredients[0])
+print(cheeseburger_ingredients[3])
+print(len(cheeseburger_ingredients))
+print(len(the_count))
+
+# going through lists
+
+for generic_item_name in cheeseburger_ingredients:
+    print(generic_item_name)
+
+for number in the_count:
+    print(number * 2)
+
+length = len(cheeseburger_ingredients)
+range(5)  # A list of numbers 0 through 4
+range(len(cheeseburger_ingredients)) # Generates a list of all indices
+
+for number in range(len(cheeseburger_ingredients)):
+    item = cheeseburger_ingredients[number]
+    print("The item at index %d is %s" % (number, item))
+
+
+# Recasting into a list
+strOne = "Hello World!"
+listOne = list(strOne)
+print(listOne)
+listOne[11] = '.'
+print(listOne[-1])
+
+# Adding things to a list.
+
+cheeseburger_ingredients.append("Fries")
+print(cheeseburger_ingredients)
+cheeseburger_ingredients.append("Pickles")
+
+# Remove things from a list.
+
+cheeseburger_ingredients.pop(1)
+print(cheeseburger_ingredients)
+cheeseburger_ingredients.remove("cheese")
+print(cheeseburger_ingredients)
+
+import string
+print(string.ascii_letters)
+print(string.ascii_lowercase)
+print(string.punctuation)
+
+# Making things lowercase
+strTwo = "ThIs Is A VeRY oDd sEnTeNCe"
+lowercase = strTwo.lower()
+print(lowercase)
+
+"""
+
+# Dictionaries - Made up of key: value pair
+
+dictionary = {"name": 'George', 'age': 26, 'height': 6 * 12 + 2}
+
+# Accessing things from a dictionary.
+print(dictionary['name'])
+print(dictionary['age'])
+print(dictionary['height'])
+dictionary["profession"] = "telemarketer."
+large_dictionary = {
+    'CA':'California',
+    'AZ':'Arizona',
+    'NY' : 'New York'
+}
+print(large_dictionary['NY'])
+
+larger_dictionary = {
+
+    'CA':[
+        'Fresno',
+        "San Fransisco"
+    ],
+    'AZ':[
+        "Phoenix",
+        "Tusoon"
+    ],
+    'NY':[
+        "New York City",
+        'Brooklyn'
+    ]
+
+}
+
+print(larger_dictionary['NY'][1])
+print(larger_dictionary['AZ'][0])
+print(larger_dictionary['AZ'][1])
+
+largest_dictionary = {
+    'CA': {
+        'NAME': 'California',
+        'Population': 39250000,
+        'Border ST': [
+            'Oregon',
+            'Nevada',
+            'Arizona'
+        ]
+    },
+    'AZ': {
+        'Name': 'Arizona',
+        'Population': 6931000,
+        'Border ST:': [
+            'California',
+            'Utah',
+            'Nevada',
+            'New Mexico'
+        ]
+    },
+    'NY': {
+        'Name': 'New York',
+        'Population': 19750000,
+        'Border ST':[
+            'Vermont',
+            'Massachusetts',
+            'Connections',
+            'Pennsylvania',
+            'New Jersey'
+        ]
+    },
+}
+current_node = largest_dictionary['NY']
+print(current_node['Name'])
+print(current_node['Population'])
+print(largest_dictionary)
 

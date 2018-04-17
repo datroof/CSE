@@ -6,10 +6,14 @@ import random
 #3. Does the guess match the number?
 #4. Add "higher" and "lower"
 #5. Add five guesses
+
+#initialising variables
 guesses = 5
 winning_integer = random.randint(1,10)
 print(winning_integer)
-print("Guess an integer between one and ten")
+
+while int(guesses) !=0:
+    print("Guess an integer between one and ten")
 guess = input(">_ ")
 if int(guess) == winning_integer:
     print("Yay")
